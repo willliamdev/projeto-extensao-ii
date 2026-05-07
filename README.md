@@ -16,9 +16,11 @@ O projeto está alinhado com as metas da Agenda 2030 da ONU:
 ## Roadmap: Lista de Tarefas 
 
 ### Fase 1: Planejamento e Requisitos
-- [ ] Entrevista com o grupo de dança para definir seções (Início, Aulas, Eventos, Contato).
-- [ ] Coleta de materiais (Logotipo, fotos, textos descritivos).
+- [x] Entrevista com o grupo de dança para definir seções (Início, Aulas, Eventos, Contato).
+- [x] Coleta de materiais (Logotipo, fotos, textos descritivos).
 - [ ] Definição da paleta de cores e identidade visual.
+  - [x] Criação de Telas Mobile
+  - [ ] Criação de Telas Desktop  
 
 ### Fase 2: Estrutura e Estilo (HTML/CSS)
 - [ ] Criação da estrutura semântica das páginas.

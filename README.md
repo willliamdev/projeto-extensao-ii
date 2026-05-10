@@ -18,12 +18,12 @@ O projeto está alinhado com as metas da Agenda 2030 da ONU:
 ### Fase 1: Planejamento e Requisitos
 - [x] Entrevista com o grupo de dança para definir seções (Início, Aulas, Eventos, Contato).
 - [x] Coleta de materiais (Logotipo, fotos, textos descritivos).
-- [ ] Definição da paleta de cores e identidade visual.
+- [x] Definição da paleta de cores e identidade visual.
   - [x] Criação de Telas Mobile
-  - [ ] Criação de Telas Desktop  
+  - [x] Criação de Telas Desktop  
 
 ### Fase 2: Estrutura e Estilo (HTML/CSS)
-- [ ] Criação da estrutura semântica das páginas.
+- [x] Criação da estrutura semântica das páginas.
 - [ ] Implementação do layout responsivo (Mobile First).
 - [ ] Estilização de componentes (Navegação, botões, rodapé).
 

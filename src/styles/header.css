@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    padding-top: 1vh;
+    width: 120px;
+    z-index: 2;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    padding: 2px 8%;
+    background-color: var(--azul);
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    background-color: var(--azul);
+    font-family: "Road Rage", sans-serif;
+}
+
+.nav-bar {
+    width: 100%;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--red);
+    font-size: 1.5rem;
+    border: none;
+}
+
+@media (max-width: 725px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+    .nav-list {
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 100vw;
+        background: var(--azul);
+        transform: translateY(-200%);
+        gap: 2rem;
+        padding: 2rem 0;
+        list-style: none;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateY(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(0px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+}

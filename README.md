@@ -24,17 +24,17 @@ O projeto está alinhado com as metas da Agenda 2030 da ONU:
 
 ### Fase 2: Estrutura e Estilo (HTML/CSS)
 - [x] Criação da estrutura semântica das páginas.
-- [ ] Implementação do layout responsivo (Mobile First).
-- [ ] Estilização de componentes (Navegação, botões, rodapé).
+- [x] Implementação do layout responsivo (Mobile First).
+- [x] Estilização de componentes (Navegação, botões, rodapé).
 
 ### Fase 3: Dinamismo (JavaScript)
-- [ ] Implementação de menu *hamburger* para dispositivos móveis.
+- [x] Implementação de menu *hamburger* para dispositivos móveis.
 - [ ] Criação de uma galeria de fotos dinâmica ou carrossel.
-- [ ] Formulário de contato com validação de campos.
+- [x] Formulário de contato com validação de campos.
 
 ### Fase 4: Implantação e Finalização
-- [ ] Configuração do repositório no GitHub.
-- [ ] Ativação do **GitHub Pages** nas configurações do projeto.
+- [x] Configuração do repositório no GitHub.
+- [x] Ativação do **GitHub Pages** nas configurações do projeto.
 - [ ] Teste de performance e acessibilidade.
 - [ ] Coleta do depoimento da instituição para o relatório final.
 

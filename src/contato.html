@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Alex Academia</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./img/white-logo-bold.svg" alt="logo" width="120" height="120" />
+            <button class="mobile-menu" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-list">
+                <ul class="nav-bar">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/#sobre">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><button class="button"><a href="/#matricula">Matricule-se</a></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="contact">
+            <h2 class="section-title">Fale conosco</h2>
+            <div class="section-container">
+                <div class="schedule-info">
+                    <h3>Nosso contatos Oficiais</h3>
+
+                    <p>Entre em contato conosco através dos canais abaixo:</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+5534996427075">(34) 99642-7075</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:alex.academia.danca@gmail.com"> alex.academia.danca@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <a href="https://maps.app.goo.gl/sua-url-aqui" target="_blank"> Rua Exemplo, 123 - Centro, Uberlândia/ MG</a>
+                        </li>
+                    </ul>
+                </div>
+                <form id="matriculaForm" onsubmit="ViaContato(event)">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input id="name" type="text" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Envie Sua Mensagem:</label>
+                        <textarea rows="5" id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">
+                        Continuar Via WhatsApp</button>
+                </form>
+            </div>
+        </section>
+        <section id="location">
+            <h2 class="section-title">Onde estamos localizados</h2>
+            <p>Nossa escola está em um ponto estratégico no coração de Uberlândia, com acesso rápido e descomplicado
+                pelas principais avenidas.
+                <a href="https://maps.app.goo.gl/sua-url-aqui" target="_blank" class="btn-rota">
+                    Trace sua rota no GPS
+                </a>
+            </p>
+            <iframe
+                src="
+                https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.3520199877926!2d-48.2782006!3d-18.915806500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445ab5f598719%3A0x9a3904ff54735caa!2sAlex%20Academia%20de%20Dan%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1778450929901!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>
+
+    <footer>
+        <img class="logo-rodape" src="img/white-logo.svg" alt="logo" />
+
+        <p>&copy; 2026 Alex Academia. Todos os direitos reservados.</p>
+        <p>Desenvolvido com foco na difusão cultural local.</p>
+        <div class="media">
+            <a href="https://www.instagram.com/alex.academia.danca/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100057534726391"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/5534996427075/"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="src/script/script.js"></script>
+</body>
+
+</html>

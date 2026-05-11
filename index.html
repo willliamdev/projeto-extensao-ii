@@ -1,58 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="src/img/logo.ico">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Alex Academia</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Alex Academia de Dança</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <img class="logo" src="src/img/white-logo.svg" alt="logo" width="120ox" height="120px"/>
-            
-            <button class="mobile-menu">
+            <img class="logo" src="src/img/white-logo-bold.svg" alt="logo" width="120" height="120" />
+            <button class="mobile-menu" aria-label="Abrir menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            
             <div class="nav-list">
                 <ul class="nav-bar">
-                    <li>
-                        <a href="index.html">Início</a>
-                    </li>
-                    <li >
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
-                    <li>
-                        <button class="button">
-                            <a href="matricula.html">Matricule-se</a>
-                        </button>
-                    </li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="./src/contato.html">Contato</a></li>
+                    <li><button class="button"><a href="#matricula">Matricule-se</a></button></li>
                 </ul>
-            
-                
             </div>
         </nav>
     </header>
-    <main>
 
+    <main>
+        <section id="inicio" class="hero">
+            <h1>A Arte do Movimento</h1>
+            <p>Promovendo a cultura e a expressão artística através da dança. Um projeto de difusão cultural para nossa
+                comunidade em Uberlândia.</p>
+
+            <a href="#contato" class="btn btn-primary">Agende uma Aula</a>
+        </section>
+
+        <section id="modalidades">
+            <h2 class="section-title">Nossas Aulas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Ballet Clássico</h3>
+                    <p>Técnica e postura para formar novos talentos com elegância e disciplina.</p>
+                </div>
+                <div class="card">
+                    <h3>Jazz Dance</h3>
+                    <p>Ritmo, energia e expressão corporal para fortalecer estilo e confiança.</p>
+                </div>
+                <div class="card">
+                    <h3>Contemporâneo</h3>
+                    <p>Movimento autoral e pesquisa corporal para explorar novas possibilidades artísticas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+
+            <h2 class="section-title">Nossa Missão Cultural</h2>
+            <div class="section-container">
+                <div>
+                    <!-- Placeholder para imagem do grupo -->
+                    <div
+                        style="background: #eee; height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-style: italic; color: #999;">
+                        [Foto do Grupo de Dança]
+                    </div>
+                </div>
+                <div>
+                    <p>Somos uma academia de dança dedicada a promover a cultura e a expressão artística através da
+                        dança.</p>
+                    <br>
+                    <p>Apoiamos a profissionalização de artistas e a democratização do acesso às artes em nossa região.
+                    </p>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section id="matricula">
+            <h2 class="section-title">Pré Matricula</h2>
+            <div class="section-container">
+                <div class="schedule-info">
+                    <h3>Grade de Aulas</h3>
+                    <ul>
+                        <em>// exemplo de preenchimento</em>
+                        <li>Segunda-feira - 18:00 às 19:30</li>
+                        <li>Terça-feira - 18:00 às 19:30</li>
+                        <li>Quarta-feira - 18:00 às 19:30</li>
+                        <li>Quinta-feira - 18:00 às 19:30</li>
+                        <li>Sexta-feira - 18:00 às 19:30</li>
+                    </ul>
+                </div>
+                <form id="matriculaForm" onsubmit="enviarWhatsApp(event)">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input id="name" type="text" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Modalidade Desejada:</label>
+                        <select id="modalidade" required>
+                            <option value="">Selecione uma opção...</option>
+
+                            <option value="Ballet Clássico">Ballet Clássico</option>
+                            <option value="Jazz Dance">Jazz Dance</option>
+                            <option value="Contemporâneo">Contemporâneo</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">
+                        Finalizar Via WhatsApp</button>
+                </form>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <img class="logo-rodape" src="src/img/white-logo.svg" alt="logo"/>
-        <p>R. Quintino Bocaiúva, 163 - Centro - Uberlândia - MG</p>
+        <img class="logo-rodape" src="src/img/white-logo.svg" alt="logo" />
+        <p>&copy; 2026 Alex Academia. Todos os direitos reservados.</p>
+        <p>Desenvolvido com foco na difusão cultural local.</p>
         <div class="media">
-            <a href="https://www.instagram.com/alex.academia.danca/"><i id="fa" class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100057534726391"><i id="fa" class="fa-brands fa-facebook"></i></a>
-            <a href="https://wa.me/5534996427075/"><i id="fa" class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://www.instagram.com/alex.academia.danca/"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100057534726391"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://wa.me/5534996427075/"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
+
     <script src="src/script/script.js"></script>
 </body>
+
 </html>

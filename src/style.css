@@ -124,9 +124,6 @@ nav {
   text-shadow: #0b090a 0px 4px 10px;
   padding: 6rem 1.5rem 4rem;
   background: url('./img/bg-hero.jpeg') center center/cover no-repeat;
-  ·
-  /* background: linear-gradient(180deg, #0b090a 0%, #f8f8f885 90%), url('https://images.unsplash.com/photo-1684250225055-a476017c8eaf?q=80&w=1470e&auto=format&fit=crop') center/cover no-repeat; */
-  /* background-attachment: fixed; */
 }
 
 

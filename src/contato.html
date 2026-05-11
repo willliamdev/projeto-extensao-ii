@@ -53,17 +53,31 @@
                         </li>
                         <li>
                             <i class="fa-solid fa-map-marker-alt"></i>
-                            <a href="https://maps.app.goo.gl/sua-url-aqui" target="_blank"> Rua Exemplo, 123 - Centro, Uberlândia/ MG</a>
+                            <a href="https://maps.app.goo.gl/sua-url-aqui" target="_blank"> Rua Exemplo, 123 - Centro,
+                                Uberlândia/ MG</a>
                         </li>
                     </ul>
                 </div>
-                <form id="matriculaForm" onsubmit="ViaContato(event)">
+
+                <form id="contatoForm" onsubmit="contatoViaWpp(event)">
                     <div class="form-group">
                         <label for="name">Nome:</label>
                         <input id="name" type="text" name="name" placeholder="Seu nome" required>
                     </div>
                     <div class="form-group">
-                        <label>Envie Sua Mensagem:</label>
+                        <label for="subject">Tema da Mensagem:</label>
+                        <select id="subject" name="subject">
+                            <option value="">Selecione uma opção...</option>
+
+                            <option value="Duvida">Dúvida</option>
+                            <option value="Prposta de Pareceria ">Proposta de Parceria ou Patrocínio</option>
+                            <option value="Sugestao">Sugestão de Melhoria</option>
+                            <option value="Reclamacao">Reclamação</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Envie Sua Mensagem:</label>
                         <textarea rows="5" id="message" name="message" placeholder="Sua mensagem" required></textarea>
                     </div>
 
@@ -101,7 +115,7 @@
         </div>
     </footer>
 
-    <script src="src/script/script.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

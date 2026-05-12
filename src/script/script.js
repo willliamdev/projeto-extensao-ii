@@ -85,3 +85,45 @@ function contatoViaWpp(event) {
 
     window.open(url, '_blank');
 }
+
+let count = 1;
+
+document.getElementById("radio1").checked = true;
+
+const radios = document.querySelectorAll('input[name="radio-btn"]');
+
+radios.forEach((radio, index) => {
+    radio.addEventListener("change", () => {
+        count = index + 1;
+    });
+});
+
+
+setInterval( function(){
+    nextImage()
+}, 5000)
+
+function nextImage(){
+    count++;
+     if (count > radios.length) {
+        count = 1;
+    }
+
+    document.getElementById("radio" + count).checked = true;
+}
+
+const currentImage = document.getElementById("current-image");
+
+const thumbnails = document.querySelectorAll(".thumbnails img");
+
+thumbnails.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+         thumbnails.forEach((img) => {
+            img.classList.remove("active");
+        });
+
+        thumb.classList.add("active");
+        
+        currentImage.src = thumb.src;
+    });
+});

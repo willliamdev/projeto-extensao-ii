@@ -29,7 +29,7 @@ O projeto está alinhado com as metas da Agenda 2030 da ONU:
 
 ### Fase 3: Dinamismo (JavaScript)
 - [x] Implementação de menu *hamburger* para dispositivos móveis.
-- [ ] Criação de uma galeria de fotos dinâmica ou carrossel.
+- [x] Criação de uma galeria de fotos dinâmica ou carrossel.
 - [x] Formulário de contato com validação de campos.
 
 ### Fase 4: Implantação e Finalização
